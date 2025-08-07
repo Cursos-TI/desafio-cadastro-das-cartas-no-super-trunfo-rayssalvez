@@ -4,7 +4,7 @@ int main(){
     //Declaração de variaveis da carta 1.
     char letra_carta1;
     char codigo_carta1[50];
-    float cidade_carta1[50];
+    char cidade_carta1[50];
     int quantidade_carta1;
     float area_carta1;
     float pib_carta1;
@@ -33,10 +33,10 @@ int main(){
     scanf("%s", codigo_carta1);
 
     printf("Digite o nome da cidade: \n");
-    scanf(" %49[^\n]" cidade_carta1);
+    scanf(" %49[^\n]", cidade_carta1);
 
     printf("Digite a População: \n");
-    scanf("%f", &quantidade_carta1);
+    scanf("%lu", &quantidade_carta1);
 
     printf("Digite a Área: \n");
     scanf("%f", &area_carta1);
