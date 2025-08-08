@@ -60,9 +60,6 @@ int main(){
     printf("Área: %f\n", area_carta1);
     printf("PIB: %f\n", pib_carta1);
     printf("Número de Pontos Turísticos: %d\n", pontos_turisticos_carta1);
-    printf("Densidade Populacional: %.2f\n", densidade_populacional_carta1);
-    printf("PIB per capita: %.2f\n", pib_per_capita_carta1);
-
     printf("\n\n");
 
     //Inserindo dados da carta 2.
@@ -73,7 +70,7 @@ int main(){
     scanf("%s", codigo_carta2);
 
     printf("Digite o nome da cidade: \n");
-    scanf("%s", cidade_carta2);
+    scanf(" %49[^\\n]", cidade_carta2);
 
     printf("Digite a População: \\n");scanf("%lu", &quantidade_carta2);
     printf("População: %lu\\n", quantidade_carta2);
