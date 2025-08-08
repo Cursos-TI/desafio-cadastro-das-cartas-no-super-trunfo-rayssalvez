@@ -29,14 +29,14 @@ int main(){
     printf("Digite a letra da carta: \n");
     scanf(" %c", &letra_carta1);
 
-    printf("Digite o código da carta: \n");
-    scanf("%s", codigo_carta1);
+    printf("Digite o código da carta: \\n");
+    scanf(" %3s", codigo_carta1);
 
     printf("Digite o nome da cidade: \n");
     scanf(" %49[^\n]", cidade_carta1);
 
-    printf("Digite a População: \\n");scanf("%lu", &quantidade_carta1);
-    printf("População: %lu\\n", quantidade_carta1);
+    :printf("População: %lu\\n", quantidade_carta1);
+    nscanf("%lu", &quantidade_carta1);
 
     printf("Digite a Área: \n");
     scanf("%f", &area_carta1);
@@ -65,10 +65,7 @@ int main(){
     //Inserindo dados da carta 2.
     printf("Digite a letra da carta: \n");
     scanf(" %c", &letra_carta2);
-
-    printf("Digite o código da carta: \n");
-    scanf("%s", codigo_carta2);
-
+    
     printf("Digite o nome da cidade: \n");
     scanf(" %49[^\\n]", cidade_carta2);
 
