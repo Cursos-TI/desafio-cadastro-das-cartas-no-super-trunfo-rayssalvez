@@ -3,18 +3,18 @@
 int main(){
     //Declaração de variaveis da carta 1.
     char letra_carta1;
-    char codigo_carta1[50];
+    char codigo_carta1[4];
     char cidade_carta1[50];
-    int quantidade_carta1;
+    unsigned long int quantidade_carta1;
     float area_carta1;
     float pib_carta1;
     int pontos_turisticos_carta1;
 
     //Declaração de variaveis da carta 2.
     char letra_carta2;
-    char codigo_carta2[50];
+    char codigo_carta2[4];
     char cidade_carta2[50];
-    int quantidade_carta2;
+    unsigned long int quantidade_carta2;
     float area_carta2;
     float pib_carta2;
     int pontos_turisticos_carta2;
@@ -28,15 +28,15 @@ int main(){
     //Inserindo dados da Carta 1.
     printf("Digite a letra da carta: \n");
     scanf(" %c", &letra_carta1);
-    
+
     printf("Digite o código da carta: \n");
     scanf("%s", codigo_carta1);
 
     printf("Digite o nome da cidade: \n");
     scanf(" %49[^\n]", cidade_carta1);
 
-    printf("Digite a População: \n");
-    scanf("%lu", &quantidade_carta1);
+    printf("Digite a População: \\n");scanf("%lu", &quantidade_carta1);
+    printf("População: %lu\\n", quantidade_carta1);
 
     printf("Digite a Área: \n");
     scanf("%f", &area_carta1);
@@ -75,8 +75,8 @@ int main(){
     printf("Digite o nome da cidade: \n");
     scanf("%s", cidade_carta2);
 
-    printf("Digite a População: \n");
-    scanf("%f", &quantidade_carta2);
+    printf("Digite a População: \\n");scanf("%lu", &quantidade_carta2);
+    printf("População: %lu\\n", quantidade_carta2);
 
     printf("Digite a Área: \n");
     scanf("%f", &area_carta2);
@@ -89,7 +89,7 @@ int main(){
     
     // Calcular a densidade populacional e PIB per capita para a carta 2
     densidade_populacional_carta2 = quantidade_carta2 / area_carta2;
-    pib_per_capita_carta2 (pib_carta2 * 1000000000.0) / quantidade_carta2;
+    pib_per_capita_carta2 = (pib_carta2 * 1000000000.0) / quantidade_carta2;
 
     // Exibindo informações e resultados da carta 2
     printf("\n--- Carta 2 ---\n");
