@@ -31,8 +31,8 @@ int main() {
    scanf(" %c", &letra_carta1);
 
    // Cadastro das Cartas:
-   printf("Digite o código da carta 1: \n");
-   scanf("%s", codigo_carta1);
+   printf("Digite o código da carta 1: \\n");
+   scanf("%49s", codigo_carta1);
   
    printf("Digite o nome da cidade 1: \\n");
    scanf(" %49[^\n]", cidade_carta1);
@@ -49,6 +49,11 @@ int main() {
    printf("Digite o número de Pontos Turísticos da cidade 1: \n");
    scanf("%d", &pontos_turisticos_carta1);
 
+   // Calcular a densidade populacional e PIB per capita para a carta 1.
+   densidade_populacional_carta1 = (float)quantidade_carta1 / area_carta1;(area_carta1 != 0.0f)
+   if (area_carta1 != 0.0f) {    densidade_populacional_carta1 = (float)quantidade_carta1 / area_carta1;} else {    densidade_populacional_carta1 = 0.0f;
+   pib_per_capita_carta1 = (pib_carta1 * 1000000000.0f) / (float)quantidade_carta1;
+
    // Exibindo informações e resultados da carta 1
    printf("\n--- Carta 1 ---\n");
    printf("Estado: %c\n", letra_carta1);
@@ -61,10 +66,6 @@ int main() {
    printf("Densidade Populacional: %.2f\n", densidade_populacional_carta1);
    printf("PIB per capita: %.2f\n", pib_per_capita_carta1);
    printf("\n\n");
-
-  // Calcular a densidade populacional e PIB per capita para a carta 1.
-   densidade_populacional_carta1 = (float)quantidade_carta1 / area_carta1;(area_carta1 != 0.0f)
-   (float)pib_per_capita_carta1 = (pib_carta1 * 1000000000.0f) / (float)quantidade_carta1;
 
     // Inserindo dados da carta 2.
     printf("Digite a letra da carta 2: \n");
@@ -89,8 +90,8 @@ int main() {
     scanf("%d", &pontos_turisticos_carta2);
 
     // Calcular a densidade populacional e PIB per capita para a carta 2.
-    densidade_populacional_carta2 = (float)quantidade_carta2 / area_carta2;(area_carta1 != 0.0f)
-    (float)pib_per_capita_carta2 = (pib_carta2 * 1000000000.0f) / (float)quantidade_carta2;
+    densidade_populacional_carta2 = (float)quantidade_carta2 / area_carta2;(area_carta2 != 0.0f)
+    pib_per_capita_carta2 = (pib_carta2 * 1000000000.0f) / (float)quantidade_carta2;
 
     // Exibindo informações e resultados da carta 2
     printf("\n--- Carta 2 ---\n");
